@@ -1,0 +1,11 @@
+Id,titre,description,service,date
+1,Panne électrique,Une panne de courant dans le bloc opératoire,Maintenance,2025-01-01
+2,Manque de personnel,Absence de deux infirmiers dans le service,Soins intensifs,2024-01-02
+3,Défaut de matériel,Le scanner est hors service,Radiologie,2025-01-03
+4,Retard de livraison,Les médicaments sont arrivés en retard,Pharmacie,2024-01-03
+5,Erreur médicale,Erreur dans la prescription de médicaments,Cardiologie,2025-01-04
+6,Inondation,Fuite d'eau dans une chambre du service,Réanimation,2024-01-05
+7,Incendie mineur,Feu maîtrisé rapidement dans la cuisine,Maintenance,2025-01-06
+8,Manque d'équipements,Absence de lits supplémentaires,Réanimation,2025-01-07
+9,Infection nosocomiale,Propagation d'une infection,Réanimation,2025-01-07
+10,Problème technique,Les ordinateurs sont tombés en panne,Radiologie,2024-01-08
