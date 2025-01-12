@@ -17,11 +17,11 @@ public class IncidentAppSpark {
                 .getOrCreate();
 
         StructType schema = new StructType(new StructField[]{
-                new StructField("Id", DataTypes.StringType, true, Metadata.empty()), // Id est souvent un identifiant, StringType est correct
-                new StructField("Titre", DataTypes.StringType, true, Metadata.empty()), // Titre est un titre, StringType est plus adapté
-                new StructField("Description", DataTypes.StringType, true, Metadata.empty()), // Description est une chaîne de texte, StringType est correct
-                new StructField("Service", DataTypes.StringType, true, Metadata.empty()), // Service est probablement textuel, StringType est plus logique
-                new StructField("Date", DataTypes.TimestampType, true, Metadata.empty()) // Date devrait utiliser TimestampType pour représenter les dates
+                new StructField("Id", DataTypes.StringType, true, Metadata.empty()),
+                new StructField("Titre", DataTypes.StringType, true, Metadata.empty()),
+                new StructField("Description", DataTypes.StringType, true, Metadata.empty()),
+                new StructField("Service", DataTypes.StringType, true, Metadata.empty()),
+                new StructField("Date", DataTypes.TimestampType, true, Metadata.empty())
         });
 
         Dataset<Row> incidents = sparkSession.readStream().schema(schema).option("header","true").csv("hdfs://namenode:8020/input");
